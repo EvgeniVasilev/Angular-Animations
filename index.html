@@ -1,0 +1,89 @@
+<html ng-app="anim">
+
+<head>
+  <title>Home</title>
+  <link rel="stylesheet" href="bower_components/bootstrap/dist/css/bootstrap.css" />
+  <link rel="stylesheet" href="css/main.css"/>
+</head>
+
+<body ng-controller="mainCtrl">
+  <div>
+    <h1 class="page-header">
+      Angular Animation with CSS 3 Animation API 
+    </h1>
+  </div>
+  <br/>
+  <br/>
+  <div class="container-fluid">
+    <button class="btn btn-primary" ng-click="showTable = showTable === false" ng-hide="!showTable">Hide</button>
+    <button class="btn btn-primary" ng-click="showTable = showTable === false" ng-hide="showTable">Show</button>
+    <br/>
+    <br/>
+    <table class="table table-bordered food-table" ng-if="showTable">
+      <!--Adding ng-if condition-->
+      <thead>
+        <tr>
+          <th>Item</th>
+          <th>Item</th>
+          <th>Item</th>
+          <th>Item</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>Sub Item</td>
+          <td>Sub Item</td>
+          <td>Sub Item</td>
+          <td>Sub Item</td>
+        </tr>
+        <tr>
+          <td>Sub Item</td>
+          <td>Sub Item</td>
+          <td>Sub Item</td>
+          <td>Sub Item</td>
+        </tr>
+        <tr>
+          <td>Sub Item</td>
+          <td>Sub Item</td>
+          <td>Sub Item</td>
+          <td>Sub Item</td>
+        </tr>
+        <tr>
+          <td>Sub Item</td>
+          <td>Sub Item</td>
+          <td>Sub Item</td>
+          <td>Sub Item</td>
+        </tr>
+        <tr>
+          <td>Sub Item</td>
+          <td>Sub Item</td>
+          <td>Sub Item</td>
+          <td>Sub Item</td>
+        </tr>
+        <tr>
+          <td>Sub Item</td>
+          <td>Sub Item</td>
+          <td>Sub Item</td>
+          <td>Sub Item</td>
+        </tr>
+        <tr>
+          <td>Sub Item</td>
+          <td>Sub Item</td>
+          <td>Sub Item</td>
+          <td>Sub Item</td>
+        </tr>
+        <tr>
+          <td>Sub Item</td>
+          <td>Sub Item</td>
+          <td>Sub Item</td>
+          <td>Sub Item</td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+  <script src="bower_components/angular/angular.js"></script>
+  <script src="bower_components/angular-animate/angular-animate.js"></script>
+  <script src="app/app.js"></script>
+</body>
+
+</html>

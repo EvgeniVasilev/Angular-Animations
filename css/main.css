@@ -1,0 +1,77 @@
+button {
+  width: 90px;
+}
+body {
+  overflow: hidden;
+  padding: 10px
+}
+.selected-add,
+.selected-remove {
+  transition: 300ms linear all;
+}
+.selected,
+.selected-add.selected-add-active {
+  font-size: 3em;
+  background-color: #00AEEF;
+  color: white;
+}
+.selected-remove.selected-remove-active {
+  background-color: #707070;
+  font-size: 1em;
+}
+tbody {
+  font-size: 11px;
+}
+.food-table.ng-enter {
+  -webkit-animation: 0.5s anim_enter;
+  -moz-animation: 0.5s anim_enter;
+  -o-animation: 0.5s anim_enter;
+  animation: 0.5s anim_enter;
+  position: relative;
+}
+@keyframes anim_enter {
+  from {
+    left: 100%;
+    opacity: 0;
+  }
+  to {
+    left: 0;
+    opacity: 1;
+  }
+}
+@-webkit-keyframes anim_enter {
+  from {
+    top: 100%;
+    opacity: 0;
+  }
+  to {
+    top: 0;
+    opacity: 1;
+  }
+}
+.food-table.ng-leave {
+  -webkit-animation: 0.5s anim_leave;
+  -moz-animation: 0.5s anim_leave;
+  -o-animation: 0.5s anim_leave;
+  animation: 0.5s anim_leave;
+  position: relative;
+}
+@keyframes anim_leave {
+  from {
+    top: 0;
+    opacity: 1;
+  }
+  to {
+    top: 105%;
+    opacity: 0;
+  }
+}
+@-webkit-keyframes anim_leave {
+  from {
+    left: 0;
+  }
+  to {
+    left: 105%;
+  }
+  opacity: 0;
+}
